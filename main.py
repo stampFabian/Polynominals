@@ -1,16 +1,43 @@
-# This is a sample Python script.
+# Polynominals
 
-# Press Umschalt+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# p := 2+x²
+# q := -2+x+x⁴
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Strg+F8 to toggle the breakpoint.
+def main():
+    print("hello world")
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# print p and q
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def poly_to_string(p, q):
+    p = [2, 0, 1]
+    q = [-2, 1, 0, 0, 1]
+
+
+    >>>poly_to_string(p)
+    '2 + x^2'
+
+
+
+    poly_to_string(q)
+    '-2 + x + x^4'
+
+
+
+    print(p)
+    [2, 0, 1]
+
+    print(q)
+    [-2, 1, 0, 0, 1]
+
+    poly_to_string(p, q)
+    '2 + x^2'
+    '-2 + x + x^4'
+    [2, 0, 1]
+    [-2, 1, 0, 0, 1]
+
+    print(poly_to_string(p))
+    print(poly_to_string(q))
+
+    print(p)
+    print(q)
